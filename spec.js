@@ -20,6 +20,14 @@ describe('Catalytic home page Demo', function() {
         SignInButton.click();
         helper.waitUntilReady();
 
+        var username_text=element(by.id('cat-login-email'));
+        username_text.sendKeys('GURU99');
+		
+        var password_text=element(by.id('cat-login-password'));
+        password_text.sendKeys('GURU99');
+		
+	      SignInButton.click();
+        
  //afterEach(function () {
    // browser.ignoreSynchronization = false;
   //})
